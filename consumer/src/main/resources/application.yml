@@ -1,0 +1,13 @@
+server:
+  port: 8380
+spring:
+  application:
+    name: consumer-server
+eureka:
+  hostname: localhost
+  port: 8280
+  client:
+#    register-with-eureka: false
+#    fetch-registry: false
+    service-url:
+      defaultZone: http://${eureka.hostname}:${eureka.port}/eureka/
