@@ -13,8 +13,8 @@ public class ConsumerController {
 	
 	@RequestMapping("hello-consumer")
 	public String helloConsumer() {
-		restTemplate.getForObject("http://provide-server/hello", String.class);
+		String result = restTemplate.getForObject("http://provide-server/hello", String.class);
 		System.out.println("=============helloConsumer============");
-		return "hello consumer finish !!!";
+		return "hello consumer finish !!!" + result;
 	}
 }

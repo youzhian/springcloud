@@ -10,10 +10,9 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
  */
 @EnableDiscoveryClient
 @SpringBootApplication
-public class ProvideApplication 
-{
-    public static void main( String[] args )
-    {
+public class ProvideApplication {
+
+    public static void main( String[] args ){
         SpringApplication.run(ProvideApplication.class,args);
         System.out.println("==============provide启动成功===============");
     }
